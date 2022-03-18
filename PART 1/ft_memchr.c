@@ -11,16 +11,12 @@
 /* ************************************************************************** */
 
 /*
-*	DESCRIPTION
 *	The memchr() function locates the first occurrence of c (converted to an 
-*	unsigned char) in string s.
-*	PARAMETERS
+*	unsigned char) in string s and returns a pointer to byte located, or NULL.
+*
 *	#1. The pointer in which to check for the occurence of c.
 *	#2. The character to check occurence of.
 *	#3. The number of bytes to check for any occurence of c in s.
-*	RETURN VALUES
-*	The memchr() function returns a pointer to the byte located, or NULL if no 
-*	such byte exists within n bytes.
 */
 
 #include "libft.h"
