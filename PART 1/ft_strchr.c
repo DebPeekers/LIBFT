@@ -23,6 +23,7 @@ char *ft_strchr(const char *s, int c)
 	return ((char *)s);
 }
 
-/* The strchr() function finds the first occurrence of a character in a string. The character c can be the null character (\0); the ending null character of string is included in the search.
-
-The strchr() function operates on null-ended strings. The string arguments to the function should contain a null character (\0) that marks the end of the string*/
+/* The strchr() function finds the first occurrence of a character in a string.
+The character c can be the null character (\0); the ending null character of string is included in the search.
+The strchr() function operates on null-ended strings.
+The string arguments to the function should contain a null character (\0) that marks the end of the string*/
