@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 /*
-*	LIBRARY
-*	#include <string.h>
 *	DESCRIPTION
 *	strlcat() appends string src to the end of dst.  It will append at most 
 *	dstsize - strlen(dst) - 1 characters.  It will then NUL-terminate, unless 
