@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/* counts out string length */
+
 #include "libft.h"
 
 int	ft_strlen(char *str)
@@ -23,12 +25,3 @@ int	ft_strlen(char *str)
 		str ++;
 	}
 	return (counter);
-}
-/*
-int	main(void)
-{
-	int i;
-	i = ft_strlen ("Hello");
-	printf("%d\n", i);
-}
-*/
