@@ -10,23 +10,33 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The atio function converts a string into and integer.
- * It skips all whit-space characters as the beginnign of thse string,
- * and converts subsequent characters as part of the number stoping when it encounters
- * the first charager that isn't a number */
+/*
+*	Converts a string into and integer.
+*	1. skips white-space characters at beginning of string,
+*	2. onverts subsequent characters as part of the number stoping when it encounters
+*	the first charager that isn't a number */
 
-#include "libft.h"
-
-int	ft_atoi(const char *str)
+int ft_atoi(const char *str)
 {
-	int	i;
-	int	res;
-	int	neg;
+    int i;
+    int neg;
+    int res;
 
-	i = 0;
-	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\r' || str [i] == '\v' || str[i] == '\f' || str[i] == ' ')
+i = 0;
+neg = 1;
+res = 0;
+while (str[i] == ' '|| (str[i] >= 9 && str[i] <= 13))
 		i++;
-	/* '\t' is used to read the 'tab' character by shifting the curser a couple of spaces to the right
-	 * '\n' new line
-	 * '\r' caracge return, similar to new line
-	 * '\v vertical tab
+	if (str[i] == '-' || str[i] == '+')
+	{
+		if (str[i] == '-')
+			neg *= -1;
+		i++;
+	}
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		res = (str[i] - '0') + (res * 10);
+		i++;
+	}
+	return (res * neg);)
+}
