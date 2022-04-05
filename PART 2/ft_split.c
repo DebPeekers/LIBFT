@@ -3,6 +3,7 @@
 *	splitting ’s’ using the character ’c’ as a delimiter. The array must be
 *	ended by a NULL pointer.
 */
+
 #include "libft.h"
 
 static void	ft_free2d(char *strs)
